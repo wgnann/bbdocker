@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  bb:
+    build: .
+    environment:
+      - DISPLAY=${DISPLAY}
+      - XAUTHORITY=/tmp/auth
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ${XAUTHORITY}:/tmp/auth
