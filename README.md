@@ -1,5 +1,5 @@
 # bbdocker
-Container que exibe um Firefox capaz de acessar o BB fortemente inspirado em https://github.com/farribeiro/wscef-docker
+Container que exibe um Firefox capaz de acessar o BB fortemente inspirado em https://github.com/farribeiro/wscef-docker.
 
 ### Como funciona?
 1. Instalar o `docker` e o `docker-compose`;
