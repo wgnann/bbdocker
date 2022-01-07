@@ -1,6 +1,8 @@
 #! /bin/bash
 
 USER=ff$XUID
+HOME=$(getent passwd $USER | cut -d: -f6)
+deluser $USER && rm -rf $HOME
 adduser --uid $XUID --disabled-password --add_extra_groups --gecos $USER $USER
 mkdir -p /run/user/$XUID
 chown $XUID:$XUID /run/user/$XUID
