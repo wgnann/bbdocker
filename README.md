@@ -3,8 +3,9 @@ Container que exibe um Firefox capaz de acessar o BB fortemente inspirado em htt
 
 ### Como funciona?
 1. Instalar o `docker` e o `docker-compose`;
-2. Montar a imagem: `docker-compose build bb`;
-3. Rodar a imagem: `docker-compose run bb`.
+2. Acessar o diretório depois de clonar;
+3. Montar a imagem: `docker-compose build bb`;
+4. Rodar a imagem: `docker-compose run bb`.
 
 ### Caveats
 Está configurado para usar o usuário com UID 1000, porém é necessário usar o mesmo UID do usuário com acesso ao X. Isso está no `Dockerfile`.
