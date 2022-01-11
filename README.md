@@ -5,9 +5,7 @@ Container que exibe um Firefox capaz de acessar o BB fortemente inspirado em htt
 1. Instalar o `docker` e o `docker-compose`;
 2. Acessar o diretório depois de clonar;
 3. Montar a imagem: `XUID=$UID docker-compose build bb`;
-4. Montar o container: `XUID=$UID docker-compose run --name bancodobrasil bb`.
-
-Para rodar nas próximas vezes basta executar o `bancodobrasil.sh`.
+4. Rodar o container: basta executar o `bancodobrasil.sh`.
 
 ### Caveats
 O docker apaga a variável de ambiente `UID`, então precisamos definir uma outra, a `XUID`, para garantir a comunicação correta do X no container com o X no host.

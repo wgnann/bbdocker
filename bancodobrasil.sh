@@ -1,2 +1,2 @@
 #! /bin/bash
-XUID=$UID docker start -i -a bancodobrasil
+XUID=$UID docker-compose run --rm bb
