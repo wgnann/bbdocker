@@ -4,7 +4,7 @@ Container que exibe um Firefox capaz de acessar o BB fortemente inspirado em htt
 ### Como funciona?
 1. Instalar o `docker` e o `docker-compose`;
 2. Acessar o diretório depois de clonar;
-3. Montar a imagem: `XUID=$UID docker-compose build bb`;
+3. Montar a imagem: `docker-compose build bb`;
 4. Rodar o container: basta executar o `bancodobrasil.sh`.
 
 ### Caveats
