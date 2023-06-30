@@ -21,4 +21,4 @@ wait_warsaw root
 setpriv --reuid=$XUID /usr/local/bin/warsaw/core
 wait_warsaw $USER
 
-setpriv --reuid=$XUID --reset-env env DISPLAY=$DISPLAY firefox -no-remote -private-window seg.bb.com.br
+setpriv --reuid=$XUID --reset-env env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY firefox -no-remote -private-window seg.bb.com.br
